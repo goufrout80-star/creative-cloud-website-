@@ -6,7 +6,13 @@ const getSecretKey = () => {
   if (process.env.SESSION_SECRET) {
     return process.env.SESSION_SECRET;
   }
-  if (process.env.NODE_ENV === 'production') {
+  // During build, Next.js sets NODE_ENV=production but env vars aren't available
+  // Only enforce at runtime (when server is actually running)
+  const isBuildTime = process.env.NEXT_PHASE === 'phase-production-build' || 
+                      process.env.NEXT_PHASE === 'phase-development-build' ||
+                      (typeof window === 'undefined' && !process.env.VERCEL && !process.env.HOSTINGER);
+  
+  if (process.env.NODE_ENV === 'production' && !isBuildTime) {
     throw new Error('SESSION_SECRET environment variable is required in production');
   }
   return "dev_secret_key_only";

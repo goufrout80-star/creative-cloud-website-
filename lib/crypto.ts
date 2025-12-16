@@ -5,7 +5,13 @@ const getEncryptionKey = () => {
   if (process.env.ENCRYPTION_KEY) {
     return process.env.ENCRYPTION_KEY;
   }
-  if (process.env.NODE_ENV === 'production') {
+  // During build, Next.js sets NODE_ENV=production but env vars aren't available
+  // Only enforce at runtime (when server is actually running)
+  const isBuildTime = process.env.NEXT_PHASE === 'phase-production-build' || 
+                      process.env.NEXT_PHASE === 'phase-development-build' ||
+                      typeof window === 'undefined' && !process.env.VERCEL && !process.env.HOSTINGER;
+  
+  if (process.env.NODE_ENV === 'production' && !isBuildTime) {
     throw new Error('ENCRYPTION_KEY environment variable is required in production');
   }
   return 'dev_encryption_key_32_chars_long_!!';
