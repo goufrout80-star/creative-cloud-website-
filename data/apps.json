@@ -1,0 +1,143 @@
+[
+  {
+    "id": "1",
+    "name": "Photoshop",
+    "short": "Ps",
+    "color": "#31A8FF",
+    "visible": true
+  },
+  {
+    "id": "2",
+    "name": "Illustrator",
+    "short": "Ai",
+    "color": "#FF9A00",
+    "visible": true
+  },
+  {
+    "id": "3",
+    "name": "Premiere Pro",
+    "short": "Pr",
+    "color": "#9999FF",
+    "visible": true
+  },
+  {
+    "id": "4",
+    "name": "After Effects",
+    "short": "Ae",
+    "color": "#9999FF",
+    "visible": true
+  },
+  {
+    "id": "5",
+    "name": "Lightroom",
+    "short": "Lr",
+    "color": "#31A8FF",
+    "visible": true
+  },
+  {
+    "id": "6",
+    "name": "Adobe XD",
+    "short": "Xd",
+    "color": "#FF66FF",
+    "visible": true
+  },
+  {
+    "id": "7",
+    "name": "Audition",
+    "short": "Au",
+    "color": "#00E09E",
+    "visible": true
+  },
+  {
+    "id": "8",
+    "name": "InDesign",
+    "short": "Id",
+    "color": "#FF3366",
+    "visible": true
+  },
+  {
+    "id": "9",
+    "name": "Animate",
+    "short": "An",
+    "color": "#FF3366",
+    "visible": true
+  },
+  {
+    "id": "10",
+    "name": "Media Encoder",
+    "short": "Me",
+    "color": "#9999FF",
+    "visible": true
+  },
+  {
+    "id": "11",
+    "name": "Acrobat Pro",
+    "short": "Ac",
+    "color": "#FF0000",
+    "visible": true
+  },
+  {
+    "id": "12",
+    "name": "Firefly",
+    "short": "Ff",
+    "color": "#000000",
+    "visible": true,
+    "isSpecial": true
+  },
+  {
+    "id": "13",
+    "name": "Dreamweaver",
+    "short": "Dw",
+    "color": "#FF3366",
+    "visible": false
+  },
+  {
+    "id": "14",
+    "name": "Bridge",
+    "short": "Br",
+    "color": "#000000",
+    "visible": false
+  },
+  {
+    "id": "15",
+    "name": "Creative Cloud",
+    "short": "CC",
+    "color": "#FF0000",
+    "visible": false
+  },
+  {
+    "id": "16",
+    "name": "Dimension",
+    "short": "Dn",
+    "color": "#00E09E",
+    "visible": false
+  },
+  {
+    "id": "17",
+    "name": "Fresco",
+    "short": "Fr",
+    "color": "#00E09E",
+    "visible": false
+  },
+  {
+    "id": "18",
+    "name": "Character Animator",
+    "short": "Ch",
+    "color": "#9999FF",
+    "visible": false
+  },
+  {
+    "id": "19",
+    "name": "Express",
+    "short": "Ex",
+    "color": "#FF9A00",
+    "visible": false
+  },
+  {
+    "id": "20",
+    "name": "InCopy",
+    "short": "Ic",
+    "color": "#FF3366",
+    "visible": false
+  }
+]

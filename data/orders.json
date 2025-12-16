@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ord_1",
+    "customerEmail": "john@example.com",
+    "amount": 0.5,
+    "currency": "USD",
+    "status": "completed",
+    "date": "2025-11-27T10:00:00Z",
+    "paymentId": "pi_mock_12345"
+  },
+  {
+    "id": "ord_2",
+    "customerEmail": "sarah@test.com",
+    "amount": 0.5,
+    "currency": "USD",
+    "status": "paid",
+    "date": "2025-11-27T09:30:00Z",
+    "paymentId": "pi_mock_67890"
+  },
+  {
+    "id": "ord_3",
+    "customerEmail": "failed@user.com",
+    "amount": 0.5,
+    "currency": "USD",
+    "status": "failed",
+    "date": "2025-11-26T15:45:00Z",
+    "paymentId": "pi_mock_fail_1"
+  },
+  {
+    "id": "ord_4",
+    "customerEmail": "mike@studio.com",
+    "amount": 0.5,
+    "currency": "USD",
+    "status": "paid",
+    "date": "2025-11-26T14:20:00Z",
+    "paymentId": "pi_mock_55555"
+  },
+  {
+    "id": "ord_5",
+    "customerEmail": "new@creative.com",
+    "amount": 0.5,
+    "currency": "USD",
+    "status": "pending",
+    "date": "2025-11-27T11:15:00Z",
+    "paymentId": "pi_mock_pending_1"
+  }
+]

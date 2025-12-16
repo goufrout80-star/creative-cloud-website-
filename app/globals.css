@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+  
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+  --animate-shimmer: shimmer 2s linear infinite;
+  
+  @keyframes shimmer {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+}
+
+:root {
+  /* TFM Brand Colors */
+  --tfm-gold: #f5c900;
+  --tfm-black: #131313;
+  --tfm-gray: #f2f2f2;
+  --tfm-bronze: #b7791f;
+  --tfm-offwhite: #f0e6d2;
+  
+  /* Theme Variables */
+  --background: var(--tfm-black);
+  --foreground: var(--tfm-offwhite);
+  
+  --card: #1a1a1a;
+  --card-foreground: var(--tfm-offwhite);
+  
+  --popover: #1a1a1a;
+  --popover-foreground: var(--tfm-offwhite);
+  
+  --primary: var(--tfm-gold);
+  --primary-foreground: var(--tfm-black);
+  
+  --secondary: var(--tfm-bronze);
+  --secondary-foreground: var(--tfm-offwhite);
+  
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+  
+  --accent: var(--tfm-bronze);
+  --accent-foreground: var(--tfm-offwhite);
+  
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  
+  --border: #2a2a2a;
+  --input: #2a2a2a;
+  --ring: var(--tfm-gold);
+  
+  --radius: 1rem;
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .glass-panel {
+    @apply bg-[#1a1a1a]/70 backdrop-blur-xl border border-[#f5c900]/20 shadow-lg;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#f5c900] via-[#b7791f] to-[#f5c900];
+  }
+  
+  .hero-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(245, 201, 0, 0.15), transparent 70%);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  * {
+    @apply border-border;
+  }
+}

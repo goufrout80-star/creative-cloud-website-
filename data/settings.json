@@ -1,0 +1,18 @@
+{
+  "storeName": "todayfilmmakers",
+  "supportEmail": "support@todayfilmmakers.com",
+  "whatsappNumber": "+212719977947",
+  "maintenanceMode": false,
+  "socials": {
+    "instagram": "https://www.instagram.com/todayfilmmakers/",
+    "facebook": "https://facebook.com",
+    "youtube": "https://youtube.com",
+    "twitter": "https://twitter.com"
+  },
+  "showSocials": {
+    "instagram": true,
+    "facebook": true,
+    "youtube": true,
+    "twitter": true
+  }
+}
